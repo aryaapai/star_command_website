@@ -1,0 +1,89 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+  
+a {
+    color: #4154f1;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #717ff5;
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    font-style: italic;
+    font-size: 40px;
+}
+  
+h1{
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center1{
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.center2{
+    width: 900px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.center3{
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.center4{
+    width:500px;
+    padding-bottom: 10px;
+}
+
+.code{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: black;
+    color: rgb(0, 255, 0);
+    padding: 10px;
+}
+
+.greater{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: black;
+    color: rgb(0, 255, 0);
+    padding-left: 7px;
+    padding-right: 100px;
+}
+
+.however{
+    color: red;
+    font-size: 30px;
+    padding: 5px;
+    margin: -5px;
+}
+
+p, li{
+    font-size: 20px;
+    padding-bottom: 20px;
+}

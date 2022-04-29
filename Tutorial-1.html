@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="assets/css/t1.css" media="all"/>
+
+    <title>ENGRC 3500 - Tutorial 1</title>
+  </head>
+
+  <body>
+      <!-- ======= Header ======= -->
+  
+  <section  class="features">
+    <!-- Title -->
+    <h1>Anaconda and Python Installation Guide</h1>
+    <h5>Reference: <a href = "https://docs.anaconda.com/_downloads/9ee215ff15fde24bf01791d719084950/Anaconda-Starter-Guide.pdf">Anaconda Environment Cheat Sheet</a></h5>
+    
+    <!-- Anaconda Intro -->
+    <h3>What is the Anaconda Distribution?</h3>
+    <p>Different libraries in Python can perform amazing tasks for data and computer science.  Some of these libraries can be used to create graphs and plots of data, some could be used to access large datasets, and others could perform specific machine learning algorithms. These libraries all run on specific versions of the Python environment, which can differ between packages. The Anaconda Distribution contains a large collection of Python libraries and an environment management tool to make it easier for you to access all of the libraries you need.</p>
+    <p>Popular packages include <a href="www.numpy.org">NumPy</a>, <a href="www.scipy.org">SciPy</a>, <a href="www.matplotlib.org">Matplotlib</a>, <a href="www.seaborn.pydata.org">Seaborn</a>, and <a href="www.scikit-learn.org/stable">Scikit-Learn</a> to name a few.</p>
+
+    <!-- Installing Python -->
+    <h3>Let's install Python 3.7 before we can install Anaconda.</h3>
+    <p>The Anaconda version of Python 3.7 is the standard version of Python that is used on Cornell’s campus. 
+      Note that this version of Python only works for MacOS Sierra (10.12) or higher (you can check your MacOS version and update it 
+      accordingly in the Settings app:</p>
+    
+    <!-- MacOS Update -->
+    <img src="images/tutorial1_sc1.png" alt="Checking for software update." class="center1">
+    <img src="images/tutorial1_sc2.png" alt="Settings update screen." class="center1">
+
+    <!-- Anaconda and Python 3.7 Installation -->
+    <p>After verifying you are on a valid MacOS version, follow this link to download <a href="https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.pkg">Anaconda 3.7 for MacOS</a>, a desktop application from which you can launch Jupyter Notebook. Clicking this link will download the installation app for Anaconda; double click it to launch the installer and follow the steps.</p>
+    <ol>
+      <li>Click through the Introduction, Read Me, and License sections.</li>
+
+      <li>In “Destination Select,” choose “Install on a specific disk…”. This is the option with the image of a hard drive underneath the option with the image of a house (the “Install for me only” option). Choose where to install Anaconda with the Choose Folder button, and select your Applications folder. After doing so, click the continue button.</li>
+      <img src="images/tutorial1_sc3.png" alt="Select installation destination." class="center1">
+
+      <li>Click the Install button in the bottom right corner to install the Anaconda application.</li>
+      <img src="images/tutorial1_sc4.png" alt="Click the Install button." class="center1">
+    </ol>
+
+    <p><i><u>Python has now been installed!</u></i></p>
+    <p>You can check to ensure proper installation by opening the Terminal app and typing “python” and hit the return key. The terminal will then show <span class="greater">>>> | </span></p>
+    <p>Nice work! You have successfully entered the Python Interactive Shell.</p>
+
+    <p class="however">HOWEVER: If this does <u>NOT</u> appear:</p>
+
+    <ul>
+      <li>Reload the terminal and copy/paste the following:</li>
+      <p class = 'code'>ls {/opt,/Applications,~,/Users/Shared/RelocatedItems/Security}/anaconda3/bin/python 2>/dev/null; echo "..."</p>
+
+      <li>If the only output in the terminal is “...”, try <i>rebooting and reinstalling Anaconda.</i></li>
+    </ul>
+
+    <p>In the line immediately underneath where you typed “python” and hit return, check which version of Python is output. This is how you can check which version of Python you are running, and <i>for most Cornell courses it is recommended to use iterations of Python 3.7.</i></p>
+
+    <!-- Anaconda Navigator Intro -->
+    <h3>What is the Anaconda Navigator?</h3>
+    <p>The Anaconda Navigator is a Graphical User Interface (GUI) for managing Python. From the Navigator, you can install packages, create and edit environments, and launch Python specific applications. There are two methods to open the Anaconda Navigator application:</p>
+    <ul>
+      <li><em>Method 1: </em>Open the Launchpad (keyboard shortcut: command + space bar, type Launchpad). Open the Anaconda-Navigator application.</li>
+      <img src="images/tutorial1-sc9.png" alt="Anaconda in Launchpad" class="center3">
+      <li><em>Method 2: </em>Open a Terminal (use Spotlight Search (shortcut: command + space bar) and type Terminal). In the Terminal window, type anaconda-navigator.</li>
+      <img src="images/tutorial1-sc10.png" alt="Spotlight Search" class = "center4">
+      <img src="images/tutorial1-sc11.png" alt="anaconda-navigator in Terminal" class = "center4">
+    </ul>
+
+    <!-- Launching Jupyter -->
+    <p>Note that you can move the Anaconda Navigator application to the Applications folder and then anywhere you’d like (into your Taskbar, onto your Desktop, in a specific folder, etc.), and open it. Once it loads, click the "Launch" button underneath Jupyter Notebook.</p>
+    <img src="images/tutorial1_sc5.png" alt="Launching Jupyter from the Anaconda Navigator." class="center2">
+
+    <!-- Jupyter Browser Tab -->
+    <p>After clicking Launch, the Jupyter Notebook tab should appear in your browser and look something like this:</p>
+    <img src="images/tutorial1_sc6.png" alt="Jupyter Notebook browser tab." class="center2">
+
+    <!-- New .ipynb File -->
+    <p>From here, you have two options. You can click the “New” button and select Python 3. This will create a brand new Notebook file that’s stored in the same directory that Anaconda is in. It should look something like this:</p>
+    <img src="images/tutorial1-sc7.png" alt="New Jupyter Notebook." class="center2">
+
+    <!-- Downloaded .ipynb File -->
+    <p>The other option is that you can move through different folders to get to where your .ipynb file is located. For example, if you have the notebook file on your Desktop, select the Desktop folder and then click on the specific file. An example could look like this:</p>
+    <img src="images/tutorial1-sc8.png" alt="Opened downloaded notebook." class="center2">
+
+
+    <!-- Getting Started -->
+    <h3>Let's get started!</h3>
+
+    <!-- Downloading Tutorial 2 -->
+    <p>Let's begin by downloading and opening <a target="_blank" href="index.html#services">Tutorial 2: Getting Started with Jupyter Notebook</a> . Click the start button:</p>
+    <img src="images/tutorial1-sc12.png" alt="Starting Tutorial 2" class="center3">
+
+    <p>You will now be prompted with a download link for the Tutorial-2.ipynb notebook file. Click download.</p>
+    <img src="images/tutorial1-sc13.png" alt="Download prompts" class="center4">
+    <img src="images/tutorial1-sc14.png" alt="Chrome download" class="center3">
+
+    <!-- Creating a new folder -->
+    <p>Move the file from your browser to the necessary destination. To make it easy, let's create a new folder on the Desktop and name it Jupyter Notebooks Intro.</p>
+    <img src="images/tutorial1-sc15.png" alt="Folder for files" class="center4">
+
+    <p><em>Note:</em> Tutorial 4 has a dataset to download. When working with external datasets (such as .csv files), <b>store them in the same location as your notebook file.</b></p>
+    <img src="images/tutorial1-sc16.png" alt="Tutorial 4 csv" class="center4">
+
+    <!-- Opening the file in Jupyter -->
+    <p>Open the folder with our file (Desktop --> Jupyter Notebooks Intro --> Tutorial-2.ipynb):</p>
+    <img src="images/tutorial1-sc17.png" alt="Opening the new folder in the Desktop" class="center3">
+    <img src="images/tutorial1-sc18.png" alt="Opening the tutorial-2" class="center3">
+
+    <p>You have now opened Tutorial 2!</p>
+    <img src="images/tutorial1-sc19.png" alt="Tutorial-2.ipynb opened in Jupyter Notebook." class="center2">
+  </section>
+  </body>
+</html>
